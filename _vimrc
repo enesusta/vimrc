@@ -1,5 +1,12 @@
 set nu
 syntax on
+set encoding=utf-8  " The encoding displayed.
+set fileencoding=utf-8  " The encoding written to file.
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set background=white
+colorscheme solarized8
 
 "---------------------------
 set nocompatible              " be iMproved, required
@@ -29,6 +36,8 @@ set rtp+=C:/Users/Vim/vimfiles/bundle/Vundle.vim/
 let path='C:/Users/Vim/vimfiles/bundle'
 call vundle#begin(path)
 
+Plugin 'lifepillar/vim-solarized8'
+Plugin 'zxqfl/tabnine-vim'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'ericcurtin/CurtineIncSw.vim'
 Plugin 'scrooloose/nerdtree'
